@@ -1,0 +1,25 @@
+.block {
+    border: 2px solid green;
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.block-content {
+    width: 440px;
+    border: 2px solid #4b566a;
+}
+
+#block-1 {
+    margin-left: 20px;
+    text-align: center;
+}
+
+#block-2 {
+    margin-top: -124px;
+    margin-left: 510px;
+    text-align: center;
+}

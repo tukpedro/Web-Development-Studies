@@ -1,0 +1,14 @@
+#news {
+    background: #fff;
+    padding: 20px;
+    border: 2px solid gray;
+    width: 700px;
+    margin: 50px 400px;
+}
+
+h2 {
+    text-align: center;
+    border: 2px solid red;
+    width: 600px;
+    margin-left: 50px;
+}

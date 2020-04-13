@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- LEARNING TO ORGANIZE ELEMENTS WITH CLASSES AND IDS -->
+    <meta charset="UTF-8">
+    <title>Classes and Ids</title>
+    <style>
+        body {
+            font: 1.1em "Trebuchet MS", Helvetica, sans-serif;
+        }
+
+        #header-div {
+            text-align: center;
+            padding: 5px;
+            background: #828271;
+            border: 2px solid palevioletred;
+        }
+
+        #header-div li {
+            display: inline;
+            list-style-type: none;
+            padding: 20px;
+        }
+
+        #header-div a {
+            text-decoration: none;
+            color: #085662;
+        }
+
+        .column {
+            width: 400px;
+            height: 100px;
+            border: 2px solid gray;
+            margin: 10px 40px 20px 40px;
+            padding-top: 20px;
+            float: left;
+            text-align: center;
+        }
+
+        #text-content {
+            clear: both;
+            background: #c5c5b2;
+            border: 2px solid #2ECC71;
+            padding: 20px;
+        }
+
+        #text-content h1 {
+            text-align: center;
+        }
+
+        .blue-text {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="top-content">
+
+        <div id="header-div">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <div id="column-div">
+
+            <div class="column">
+                <p>First Column</p>
+            </div>
+
+            <div class="column">
+                <p>Second Column</p>
+            </div>
+
+            <div class="column">
+                <p>Third Column</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="text-content">
+        <h1>Cascading Styles Sheets</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit.
+        </p>
+
+        <p class="blue-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit.
+        </p>
+
+        <p class="blue-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id sem gravida, consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien volutpat malesuada. Proin id metus sed elit malesuada viverra sit amet a velit.
+        </p>
+    </div>
+</body>
+</html>
