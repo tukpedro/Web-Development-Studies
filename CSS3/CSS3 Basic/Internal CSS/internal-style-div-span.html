@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- LEARNING TO ORGANIZE DIVS IN BLOCKS, AND TO USE THE SPAN TAG -->
+    <meta charset="UTF-8">
+    <title>Div and Span</title>
+
+    <!-- SETING INTERNAL CSS -->
+    <style>
+        #top-div {
+            background: #fcb0b0;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        #top-div li {
+            list-style-type: none;
+            font: 1.5em "Trebuchet MS", Helvetica, sans-serif;
+            display: inline;
+            padding: 100px;
+        }
+
+        #top-div a {
+            text-decoration: none;
+            color: #00a9ff;
+            margin-left: 120px;
+        }
+
+        #top-div a:hover {
+            background: #c5c5b2;
+            color: #085662;
+        }
+
+        #main-div {
+            background: #d4db1c;
+            height: 300px;
+        }
+
+        .product {
+            background: #5252e5;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            height: 100px;
+            float: left;
+            margin: 90px 130px;
+        }
+
+        #footer-div {
+            background: #f4a869;
+            text-align: center;
+            height: 50px;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .azul {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="top-div">
+        <img src="../images/amazon.png" width="200">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="main-div">
+        <div class="product">
+            Product 1
+        </div>
+
+        <div class="product">
+            Product 2
+        </div>
+
+        <div class="product">
+            Product 3
+        </div>
+    </div>
+
+    <div id="footer-div">
+        <p>All <span class="azul">rights</span> reserved</p>
+    </div>
+</body>
+</html>

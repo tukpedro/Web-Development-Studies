@@ -1,0 +1,21 @@
+#main {
+    background: #2ECC71;
+    border: 3px solid red;
+}
+
+.contents {
+    background: #f4f490;
+    border: 2px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right;
+}
+
+.clear {
+    border: 2px solid lightblue;
+    clear: both;
+    padding: 10px;
+    margin: 10px;
+}
+
