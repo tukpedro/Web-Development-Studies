@@ -1,0 +1,37 @@
+/*Horizontal Menu Bar*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #159cb0 url("../images/fundo-horizontal.png") repeat-x;
+    float: left;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    display: block;
+    padding: 0 2em;
+    line-height: 2.5em;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: url("../images/divisor.png") repeat-y right top;
+}
+
+a:hover {
+    background: #44cade;
+    color: #085662;
+}
+
+#home #menu .home a,
+#politics #menu .politics a,
+#economics #menu .economics a,
+#technology #menu .technology a,
+#health #menu .health a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #FFFFFF;
+}

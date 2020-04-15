@@ -1,0 +1,30 @@
+/***Inheritance***/
+
+/*All elements within the body inherit the formatting*/
+/*It`s not possible to inherit borders or background*/
+
+body {
+    width: 700px;
+    border: 2px solid #00436d;
+    padding: 10px;
+    color: #382601;
+    font-size: 1.2em;
+}
+
+/***Specificity***/
+
+/*The specificity of the ID is greater than the class.*/
+/* That is, it will load the ID first q the class always.*/
+
+p {
+    color: #2ECC71;
+}
+
+
+p#id-test {
+    color: blue;
+}
+
+p.class-test{
+    color: red;
+}

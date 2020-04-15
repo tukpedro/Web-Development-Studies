@@ -1,0 +1,40 @@
+/*Tabs Menu Bar*/
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    float: left;
+    list-style-type: none;
+}
+
+ul li {
+    /*border: 2px solid red;*/
+    float: left;
+    background: url("../images/aba-direita.png") no-repeat top right;
+}
+
+li a{
+    display: block;
+    padding: 0 2.2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url("../images/aba-esquerda.png") no-repeat top left;
+    color: #FFFFFF;
+}
+
+ul a:hover {
+    color: #894a1f;
+}
+
+ul #selected {
+    background: url("../images/aba-direita-atual.png") no-repeat top right;
+}
+
+ul #selected a {
+    background: url("../images/aba-esquerda-atual.png") no-repeat top left;
+}
