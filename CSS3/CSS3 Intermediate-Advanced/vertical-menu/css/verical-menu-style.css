@@ -1,0 +1,24 @@
+/*Barra Vertical*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a{
+    background: #f7b600 url("../images/menu.png") no-repeat;
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+    text-indent: 40px; /*Similar to padding*/
+    line-height: 40px;
+}
+
+a:hover, .selected {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #FFFFFF;
+}

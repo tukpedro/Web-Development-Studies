@@ -1,0 +1,68 @@
+/*Layout*/
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+#container {
+    width: 80%;
+    min-width: 820px;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+#company-name {
+    text-align: center;
+    height: 200px;
+    background: #225992 url("../images/cabecalho2.jpg");
+    line-height: 200px;
+}
+
+#content {
+    width: 74.28%;
+    float: right;
+}
+
+#main-content {
+    width: 60%;
+    float: left;
+}
+
+img.news-image {
+    width: 94%;
+    padding: 2%;
+    max-width: 600px;
+}
+
+#side-content {
+    background: #d3d3d3;
+    width: 30%;
+    height: 250px;
+    padding: 20px;
+    float: right;
+}
+
+#nav-bar {
+    background: #d3d3d3;
+    width: 23%;
+    padding: 20px 0 20px 0;
+    float: left;
+
+}
+
+#nav-bar li {
+    list-style-type: none;
+}
+
+#nav-bar a {
+    text-decoration: none;
+}
+
+#footer {
+    background: #c6c6c6;
+    padding: 10px;
+    clear: both;
+}
+
+
