@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- APPLYING STYLES TO FORMS -->
+    <meta charset="UTF-8">
+    <title>Stylized Form</title>
+    <link rel="stylesheet" type="text/css" href="css/stylized-form-css.css">
+</head>
+<body>
+    <div id="main">
+        <h2 id="title" >Styling Form</h2>
+
+        <form>
+            <fieldset>
+                <legend>Contact details</legend>
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="url">URL:</label>
+                    <input type="text" name="url" id="url">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Comments</legend>
+
+                <div>
+                    <label>Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Remember me</legend>
+                <div>
+
+                    <label>
+                        <input class="radio" type="radio" name="remember-me" id="yes">Yes
+                    </label>
+
+                </div>
+
+                <div>
+
+                    <label>
+                        <input class="radio" type="radio" name="remember-me" id="no">No
+                    </label>
+
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
