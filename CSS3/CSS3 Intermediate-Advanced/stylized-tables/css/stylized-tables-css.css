@@ -1,0 +1,35 @@
+/*Styling Tables*/
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+    width: 50%;
+    border-collapse: separate;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    text-transform: uppercase;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #111;
+    text-align: left;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+
+tr.alternate {
+    background: #efefef;
+}
+
+tr:hover {
+    background: #c3e6e5;
+}
+
+.number {
+    text-align: right;
+}
