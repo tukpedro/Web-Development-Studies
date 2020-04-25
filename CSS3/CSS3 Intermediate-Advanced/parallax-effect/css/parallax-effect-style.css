@@ -1,0 +1,79 @@
+/**** begin website structure ****/
+
+body, html {
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #777;
+    height: 100%;
+}
+
+/**** end website structure ****/
+
+
+/**** begin website content layout ****/
+
+.content {
+    color: #777777;
+    background-color: #fff;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/**** end website content layout ****/
+
+/**** begin parallax effect ****/
+
+/* begin general box layout */
+.box1, .box2, .box3, .box4 {
+    position: relative;
+    height: 100%;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box1 {
+    background-image: url("../images/imagem1.jpg");
+}
+
+.box2 {
+    background-image: url("../images/imagem2.jpg");
+}
+
+.box3 {
+    background-image: url("../images/imagem3.jpg");
+}
+
+.box4 {
+    background-image: url("../images/imagem4.jpg");
+}
+/* end general box layout */
+
+.title-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.title-content span.title {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 18px;
+    background: #111;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+/**** end parallax effect ****/
