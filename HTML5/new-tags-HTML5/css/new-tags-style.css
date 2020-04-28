@@ -1,0 +1,38 @@
+header {
+    border: 2px solid #ccc;
+    background: #f2f2f2;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav {
+    border: 2px solid #2ECC71;
+    background: #f2f2f2;
+    padding: 10px;
+    margin: 5px;
+}
+
+article {
+    padding: 10px;
+    margin: 5px;
+    background: #db7d00;
+}
+
+section {
+    border: 2px dotted #159cb0;
+    margin: 5px;
+    padding: 5px;
+}
+
+aside {
+    background: #44cade;
+    padding: 10px;
+    margin: 5px;
+}
+
+footer {
+    border: 2px solid #b9c941;
+    background: #c6c6c6;
+    padding: 10px;
+    margin: 5px;
+}
