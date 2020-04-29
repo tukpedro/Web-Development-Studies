@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Input Tags for HTML5</title>
+    <!-- NORMALIZE CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- CUSTOMIZED STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/new-input-tags-style.css">
+</head>
+<body>
+    <form>
+        <!-- NEW INPUT TYPES AND ATTRIBUTES HTML5 -->
+
+        <!-- NAME -->
+        <label>Name:</label>
+        <input type="text" name="name" id="name" required autofocus>
+        <br><br>
+
+        <!-- EMAIL -->
+        <label>Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <!-- NUMBERS -->
+        <label>Number:</label>
+        <input type="number" name="number" id="number" min="2" max="10" step="2">
+        <br><br>
+
+        <!-- URL -->
+        <label for="url">URL:</label>
+        <input type="url" id="url" placeholder="http://www.">
+        <br><br>
+
+        <!-- SEARCH -->
+        <label for="search">Search:</label>
+        <input type="search" id="search">
+        <br><br>
+
+        <!-- RANGE -->
+        <label for="range">Range:</label>
+        <input type="range" id="range" min="1" max="10" value="5">
+        <br><br>
+
+        <!-- DATE -->
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <br><br>
+
+        <!-- COLOR -->
+        <label for="color">Color:</label>
+        <input type="color" id="color">
+        <br><br>
+
+        <input type="submit" name="" value="Send">
+
+    </form>
+</body>
+</html>
