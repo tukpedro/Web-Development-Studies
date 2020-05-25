@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
+
+    <title>Bootstrap - Navegation Bar</title>
+</head>
+<body>
+
+    <!--
+    NAVEGATION TYPES:
+        nav-pills
+        nav-tabs
+    ALIGNMENT OPTIONS:
+        justify-content-center
+        justify-content-end
+        flex-column
+     -->
+
+    <h2>Simple navegation / tabs</h2>
+    <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+            <a href="" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Services</a>
+        </li>
+    </ul>
+
+    <h2>Simple navegation bar</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chale Hotel</a>
+
+        <!-- Navegation -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Services</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2>Navegation bar with responisve menu</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chale Hotel</a>
+
+        <!-- Hamburger menu -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegation -->
+        <div class="collapse navbar-collapse" id="nav-target">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Services</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Navegation bar with forms</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chale Hotel</a>
+
+        <!-- Hamburger menu -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegation -->
+        <div class="collapse navbar-collapse" id="nav2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Services</a>
+                </li>
+            </ul>
+            <!-- Form -->
+            <form class="form-inline">
+                <input type="text" class="form-control" placeholder="pesquisar...">
+                <button class="btn btn-outline-success">ok</button>
+            </form>
+        </div>
+    </nav>
+
+    <h2>Navegation bar with dropdown menu</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chale Hotel</a>
+
+        <!-- Hamburger menu -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegation -->
+        <div class="collapse navbar-collapse" id="nav3">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="" class="dropdown-item">Service 1</a>
+                            <a href="" class="dropdown-item">Service 2</a>
+                            <a href="" class="dropdown-item">Service 3</a>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--
+    Colors:
+    bg-primary, bg-secondary, bg-success, bg-info,
+    bg-warning, bg-danger, bg-light, bg-dark
+     -->
+    <h2>Colors</h2>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chale Hotel</a>
+
+        <!-- Hamburger menu -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav4">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegation -->
+        <div class="collapse navbar-collapse" id="nav4">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Service 1</a>
+                        <a href="" class="dropdown-item">Service 2</a>
+                        <a href="" class="dropdown-item">Service 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <!--
+    Alignment:
+    fixed-top, fixed-bottom, sticky
+     -->
+    <h2>Alignment</h2>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-success">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand">Chale Hotel</a>
+
+        <!-- Hamburger menu -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav5">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegation -->
+        <div class="collapse navbar-collapse" id="nav5">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Service 1</a>
+                        <a href="" class="dropdown-item">Service 2</a>
+                        <a href="" class="dropdown-item">Service 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../bootstrap4/js/bootstrap.min.js"></script>
+
+</body>
+</html>

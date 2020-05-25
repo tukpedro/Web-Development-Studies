@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap - Grid Alignment</title>
+
+    <!-- Customized Style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap4/css/bootstrap.min.css">
+</head>
+<body style="margin-bottom: 200px; padding: 16px;">
+    <div class="container">
+
+        <h2>Vertical alignment</h2>
+        <div class="row marker align-items-center">
+            <div class="col custom-border">Area 1</div>
+            <div class="col custom-border">Area 2</div>
+            <div class="col custom-border">Area 3</div>
+        </div>
+
+        <h2>Horizontal alignment individual</h2>
+        <div class="row marker">
+            <div class="col custom-border align-self-start">Area 1</div>
+            <div class="col custom-border align-self-center">Area 2</div>
+            <div class="col custom-border align-self-end">Area 3</div>
+        </div>
+
+        <h2>Horizontal alignment columns</h2>
+        <div class="row justify-content-center">
+            <div class="marker col-2">Area 1</div>
+            <div class="marker col-2">Area 2</div>
+            <div class="marker col-2">Area 3</div>
+        </div>
+
+        <h2>Distribution</h2>
+        <div class="row custom-border justify-content-between">
+            <div class="marker col-2">Area 1</div>
+            <div class="marker col-2">Area 2</div>
+            <div class="marker col-2">Area 3</div>
+            <div class="marker col-2">Area 4</div>
+        </div>
+
+        <h2>Removing spacing</h2>
+        <div class="row no-gutters">
+            <div class="custom-border col-2">Area 1</div>
+            <div class="custom-border col-2">Area 2</div>
+            <div class="custom-border col-2">Area 3</div>
+            <div class="custom-border col-2">Area 4</div>
+        </div>
+    </div>
+</body>
+</html>

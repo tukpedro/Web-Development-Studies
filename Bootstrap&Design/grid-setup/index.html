@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap - Grid Setup</title>
+
+    <!-- Customized Style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap4/css/bootstrap.min.css">
+</head>
+<body style="margin-bottom: 200px; padding: 16px;">
+
+    <div class="container container-marker">
+
+        <h2>Fixed width</h2>
+        <div class="row" style="border: 1px solid #0000ff">
+            <div class="marker col">Area 1</div>
+            <div class="marker col">Area 2</div>
+            <div class="marker col">Area 3</div>
+            <div class="marker col">Area 4</div>
+        </div>
+
+        <h2>Auto width (auto-layout)</h2>
+        <div class="row" style="border: 1px solid #0000ff">
+            <div class="marker col-4">Area 1</div>
+            <div class="marker col-5">Area 2</div>
+            <div class="marker col-3">Area 3</div>
+        </div>
+
+        <h2>Equal width stacked</h2>
+        <div class="row" style="border: 1px solid #0000ff">
+            <div class="marker col-sm">Area 1</div>
+            <div class="marker col-sm">Area 2</div>
+            <div class="marker col-sm">Area 3</div>
+        </div>
+
+        <h2>Ordered</h2>
+        <div class="row" style="border: 1px solid #0000ff">
+            <div class="marker col-md-4 order-2">Area 1</div>
+            <div class="marker col-md-4 order-0">Area 2</div>
+            <div class="marker col-md-4 order-1">Area 3</div>
+        </div>
+
+        <h2>Offset</h2>
+        <div class="row" style="border: 1px solid #0000ff">
+            <div class="marker col col-md-6 offset-md-3">Login</div>
+        </div>
+
+        <h2>Offset multiple alignments</h2>
+        <div class="row" style="border: 1px solid #0000ff">
+            <div class="marker col-md-3 offset-md-0">Content 1</div>
+            <div class="marker col-md-3 offset-md-6">Content 2</div>
+        </div>
+
+        <h2>Nests</h2>
+        <div class="row">
+            <div class="col-md-6" style="border: 1px solid #0000ff">
+                col-md-6
+                <div class="row">
+                    <div class="col-md-6 marker">Content</div>
+                    <div class="col-md-2 marker">Content</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

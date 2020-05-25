@@ -1,0 +1,14 @@
+.marker {
+    background: #fe9d9d;
+    border: 1px solid #f94646;
+    height: 120px;
+}
+
+.container-marker {
+    background: #5bf946;
+    border: 1px solid #36ae26;
+}
+
+.custom-border {
+    border: 2px solid #0000ff;
+}

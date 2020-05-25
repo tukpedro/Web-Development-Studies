@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap - Group Input</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap4/css/bootstrap.min.css">
+</head>
+<body style="margin-bottom: 200px;padding: 16px;">
+
+    <form>
+        <h2>Group prepend</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input class="form-control" type="text" placeholder="type your email">
+        </div>
+
+        <h2>Group append</h2>
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="type your website">
+            <div class="input-group-append">
+                <span class="input-group-text">@site.com</span>
+            </div>
+        </div>
+
+        <h2>Customized URL</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">http://site.com/usuario</span>
+            </div>
+            <input class="form-control" type="text" placeholder=" type your website">
+        </div>
+
+        <h2>Currency</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">USD$</span>
+            </div>
+
+            <input class="form-control" type="text" placeholder="type a value">
+
+            <div class="input-group-append">
+                <span class="input-group-text">,00</span>
+            </div>
+        </div>
+
+        <h2>Checkbox / radio</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="radio">
+                </div>
+            </div>
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <input type="checkbox">
+                </div>
+            </div>
+            <input class="form-control" type="text" placeholder=" type your website">
+        </div>
+
+        <h2>Multiples inputs</h2>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">name / email</span>
+            </div>
+            <input class="form-control" type="text" placeholder="email">
+            <input class="form-control" type="password" placeholder="password">
+        </div>
+
+        <h2>Search</h2>
+        <div class="input-group">
+            <input class="form-control is-valid" type="search" placeholder="search">
+            <input class="btn btn-primary" type="button" value="Search">
+        </div>
+    </form>
+</body>
+</html>
