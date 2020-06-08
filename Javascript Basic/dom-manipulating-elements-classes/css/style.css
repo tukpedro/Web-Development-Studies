@@ -1,0 +1,15 @@
+.style-1 {
+    height: 150px;
+    width: 150px;
+    background: #ff0000;
+    color: #fff;
+}
+
+.style-2 {
+    height: 450px;
+    width: 250px;
+    background: #fff000;
+    color: #0000ff;
+    font-size: 2em;
+    padding: 25px;
+}
