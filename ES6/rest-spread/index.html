@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rest - Spread</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        //spread - separa conteudo
+        // o operador de spread é "..."
+
+        //with strings
+        let articleTitle = "How to use Rest/Spread";
+
+        console.log(articleTitle);
+        console.log(...articleTitle);
+        console.log(...[articleTitle]);
+
+        //with arrays
+        let coursesList1 = ['NodeJS e MongoDB', 'ES6, Typescript e Angular 4'];
+        let coursesList2 = ['Multiplatform Android/IOS', 'Linux'];
+        let completeCoursesList = [...coursesList1, 'Web Dev', ' Android', ...coursesList2];
+
+        console.log(completeCoursesList);
+
+        //with objects
+        let person = {name: 'John', age: 30};
+        let clone = {address: 'Abc Street', ...person}; // espalha o objeto person no objeto clone
+
+        console.log(clone);
+
+        //rest - junta conteudo
+        function sum(...param) { //"..." recebe quantos parametros quiser em um array
+            let result = 0;
+
+            // console.log(param);
+
+            param.forEach(value => result += value);
+
+            return result;
+        }
+
+        console.log(sum(9, 7, 4, 9)); //exemplo de multiplos parametros passados
+
+
+        function multiplication(m, ...p) {
+            console.log(m);
+            let result = 0;
+            // console.log(p);
+
+            p.forEach(value => result += m * value);
+
+            return result;
+
+        }
+
+        console.log(multiplication(10,3,5));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

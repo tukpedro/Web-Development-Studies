@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unique Literal Object</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let signature = {
+            clientId: 1000,
+            description: 'Access to internet',
+            status() {
+                console.log('Active');
+            }
+        }
+
+
+        let y = signature;
+
+
+        y.description = 'Internet + TV';
+
+        console.log(signature.description);
+        console.log(y.description);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

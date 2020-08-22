@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pillars of Object Oriented Programming - Inheritance</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        //super class
+        class Animal {
+            constructor() {
+                this.color = '';
+                this.size = null;
+                this.weight = null;
+            }
+
+            sleep() {
+                console.log('sleep');
+            }
+        }
+
+
+        // child class Dog
+        class Dog extends Animal {
+            constructor() {
+                super();
+                this.ears = 'big';
+            }
+
+            run() {
+                console.log('run');
+            }
+
+            bark() {
+                console.log('bark');
+            }
+        }
+
+
+        // child class Bird
+        class Bird extends Animal {
+            constructor() {
+                super();
+                this.beak = 'small';
+            }
+
+            fly() {
+                console.log('fly');
+            }
+        }
+
+
+        // child class Parrot
+        class Parrot extends Bird {
+            constructor() {
+                super();
+                this.talk = true;
+            }
+
+            talk (){
+                console.log('talk');
+            }
+        }
+
+
+
+        let dog = new Dog();
+        let bird = new Bird();
+        let parrot = new Parrot();
+
+        console.log(dog);
+        console.log(bird);
+        console.log(parrot);
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

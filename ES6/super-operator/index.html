@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pillars of Object Oriented Programming - Super Operator </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        //super class
+        class Animal {
+            constructor(color, size, weight) {
+                this.color = color;
+                this.size = size;
+                this.weight = weight;
+            }
+
+            sleep() {
+                console.log('sleep');
+            }
+        }
+
+
+        // child class Bird
+        class Bird extends Animal {
+            constructor(beak, color, size, weigth) {
+                super(color, size, weigth);
+                this.beak = beak;
+            }
+
+            fly() {
+                console.log('fly');
+            }
+        }
+
+
+        // child class Parrot
+        class Parrot extends Bird {
+            constructor(talk, color, size, weight) {
+                super('medium', color, size, weight);
+                this.talk = talk;
+            }
+
+            talk (){
+                console.log('talk');
+            }
+        }
+
+        let parrot = new Parrot(true, 'blue', 27, 357);
+        console.log(parrot);
+
+        let parrot2 = new Parrot(false, 'green', 22, 346)
+        console.log(parrot2);
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pillars of Object Oriented Programming - Abstraction Reflection </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        // woodwork software
+        // chair and sofa
+
+        //procedural paradigm
+
+        //chair
+        // let numberOfLegs = 4;
+        // let rotatingChair = true;
+        // let chairColor = 'blue';
+        //
+        // let chairs = [];
+        //
+        // chairs[0] = ['legs number', 'rotate', 'color'];
+        //
+        // chairs[0][0] = 1;
+        // chairs[0][1] = true;
+        // chairs[0][2] = 'red';
+        //
+        // chairs[1] =  ['legs number', 'rotate', 'color'];
+        // chairs[1][0] = 4;
+        // chairs[1][1] = false;
+        // chairs[1][2] = 'blue';
+        //
+        // function rotateChair(index) {
+        //     if (chairs[index][1] === true){
+        //         console.log('chair turned');
+        //     }
+        //     else {
+        //         console.log('not a rotate chair')
+        //     }
+        // }
+        //
+        // function addChair(legsNumber, rotate, color){
+        //     let chair = ['legs number', 'rotate', 'color'];
+        //
+        //     chair[0] = legsNumber;
+        //     chair[1] = rotate;
+        //     chair[2] = color;
+        //
+        //     chairs.push(chair);
+        // }
+        //
+        // addChair(3, false, 'yellow');
+        //
+        // console.log(chairs);
+
+        //OOP Paradigm
+        class Chair {
+            constructor(legsNumber, rotate, color) {
+                this.legsNumber = legsNumber;
+                this.rotate = rotate;
+                this.color = color;
+            }
+
+            rotateChair(){
+                if (this.rotate === true){
+                    console.log('chair turned')
+                }
+                else {
+                    console.log('not a rotating chair')
+                }
+            }
+        }
+
+        let chairs = [];
+
+        chairs.push(new Chair(4, false, 'blue'));
+        chairs.push(new Chair(1, true, 'red'));
+
+        chairs[1].rotateChair();
+        console.log(chairs);
+
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Var - Let</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        const serie2 = 'Friends';
+
+        function y() {
+            const serie2 = 'Anne';
+            console.log('inside function: ' + serie2);
+        }
+
+        y();
+
+        console.log('global scope: ' + serie2);
+
+        function x() {
+
+            var serie = 'GoT'
+
+            console.log(serie);
+
+            if (true) {
+                console.log(serie);
+            }
+        }
+        console.log('aiaiai');
+
+        x();
+
+        if (true) {
+            let serie = 'Big Bang'; /* Mantem a variavel somente dentro do escopo if */
+            console.log(serie);
+        }
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

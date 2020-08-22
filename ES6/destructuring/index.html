@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destructuring</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        /*Desestrutura arrays. Separa indices que selecionar e atribui a uma var
+        * Os [] do lado esquerdo do =, significa que sera feito uma desestruturacao*/
+
+        let fruits =['Pinapple', 'Grape', 'Pearl', 'Papaya'];
+        let [a3, b3, c3 ,d3, e3= 'Orange'] = fruits; // e possivel adicionar indices ou modificar o valor de um indice existente
+
+        console.log(a3,b3,c3,d3,e3);
+
+        let things = [['Pinapple', 'Grape', 'Pearl'], ['Joseph', 'Mary']];
+
+        let [,[n2,]] = things; //atribui o valor Joseph a n2
+
+        console.log(n2); //imprime o valor contido em n2
+
+        let [[, , n3],[, n4]] = things; //
+
+        console.log(n3, n4);
+
+
+        /*composicao:
+         qd criamos objeto literais, funcoes construtoras ou classes,
+         temos uma composicao 'e' um'.
+         Ja qd existe uma relacao de atribuicao de outro objeto sendo
+         o valor deste objeto, temos uma composicao 'tem um'.
+         */
+        let product = {
+            description: 'Notebook',
+            price: 1500,
+            details: {
+                factory: 'abc',
+                model: 'xyz'
+            }
+        }
+
+
+        /*Para desestruturar valores de dentro de objetos, usamos {}
+        * do lado esquerdo do =*/
+
+        /*Com o operador ' : ' atribuimos um nome para uma nova variavel que
+          recebe o valor do atributo do objeto */
+        let {description: dcpt, price: p, discount = 5} = product;
+        console.log(dcpt, p);
+
+        /*Para extrair valores de um objeto dentro de outro objeto
+          usamos {{}}*/
+        let {details: {factory: f, model = 'Not informed'}} = product;
+        console.log(f, model);
+
+
+
+        /*
+        Utilizando Destructuring de um array nos parametros de uma funcao:
+
+        let arr = [10, 20, 30, 40];
+
+        function test([a, b, , c, d = 50]) {
+            console.log(a, b, c, d);
+        }
+
+        test(arr);
+
+         */
+
+        /*Utilizando Destructuring de um objeto
+        nos parametros de uma funcao:*/
+        let obj ={
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40
+        }
+
+        function test({a, b}){
+            console.log(a, b)
+        }
+
+        test(obj);
+
+
+        let arr2 = [11, 21, 31, 41, 51];
+
+        /*Extrai o index1 e aatribui ao a1 e espalha(spread) os
+        index restantes em x*/
+        let [a1, ...x] = arr2;
+
+        console.log(arr2);
+
+        let obj2 = {
+            a2:12, b:22, c:32, d:42
+        }
+
+        let {a2, b, ...y} = obj2;
+
+        console.log(a2);
+        console.log(b)
+        console.log(y);
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

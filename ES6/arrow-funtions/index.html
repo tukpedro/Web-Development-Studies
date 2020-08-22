@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow Functions</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        // let square = function (x) {
+        //     return x * x;
+        // }
+
+        //
+        // let square = x => {
+        //     return x * x;
+        // }
+
+        let square = x => x *x; //implicit return
+
+        document.write(square(6) + '<br><br>');
+
+        // let odd_even = function (number) {
+        //     if (number % 2 === 0){
+        //         return 'even';
+        //     }
+        //     else {
+        //         return 'odd';
+        //     }
+        // }
+
+        let odd_even = number => number % 2 === 0 ? 'even' : 'odd';
+
+        document.write(odd_even(6));
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

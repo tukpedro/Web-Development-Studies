@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Constructor Function Encapsulation</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let Car = function () {
+            this.color = 'black';
+            this.model = 'Virtus';
+            this.currentSpeed = 0;
+            this.maximumSpeed = 193;
+
+            this.speedUp = function () {
+                let speed = this.getCurrentSpeed() + 100;
+                if (speed > this.maximumSpeed){
+                    speed = this.maximumSpeed
+                }
+                this.setCurrentSpeed(speed);
+            }
+
+            this.getCurrentSpeed = function () {
+                return this.currentSpeed;
+            }
+
+            this.setCurrentSpeed = function (currentSpeed) {
+                this.currentSpeed = currentSpeed;
+            }
+        }
+
+        let car = new Car();
+        console.log(car.currentSpeed);
+        car.speedUp();
+        console.log(car.currentSpeed);
+        car.speedUp();
+        console.log(car.currentSpeed);
+        car.speedUp();
+        car.maximumSpeed = 300;
+        console.log(car.currentSpeed);
+        car.speedUp();
+        console.log(car.currentSpeed);
+        car.speedUp();
+        console.log(car.currentSpeed);
+        car.speedUp();
+
+        let Car2 = function () {
+            var maximumSpeed = 193;
+            var kmRunned = 0;
+            this.color = 'black';
+            this.model = 'Virtus';
+            this.currentSpeed = 0;
+
+            this.speedUp = function () {
+                let speed = this.getCurrentSpeed() + 100;
+                if (speed > maximumSpeed){
+                    speed = maximumSpeed
+                }
+                this.setCurrentSpeed(speed);
+
+                setKmRunned(0.07);
+                console.log(kmRunned);
+            }
+
+            this.getCurrentSpeed = function () {
+                return this.currentSpeed;
+            }
+
+            this.setCurrentSpeed = function (currentSpeed) {
+                this.currentSpeed = currentSpeed;
+            }
+
+            var setKmRunned = function (km) {
+                kmRunned += km;
+            }
+        }
+
+        let car2 = new Car2();
+        console.log(car2.currentSpeed);
+        car2.speedUp();
+        console.log(car2.currentSpeed);
+        car2.speedUp();
+        console.log(car2.currentSpeed);
+        car2.speedUp();
+        console.log(car2.currentSpeed);
+        car2.speedUp();
+        console.log(car2.currentSpeed);
+        car2.speedUp();
+
+        console.log(car);
+        console.log(car2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

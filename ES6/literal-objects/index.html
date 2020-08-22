@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Literal Objects</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class Product {
+            constructor(description, price) {
+                this.description = description;
+                this.price = price;
+            }
+
+            seeDescription() {
+                console.log(`${this.description} for only ${"$" + this.price} `)
+            }
+        }
+
+        let product1 = new Product('Notebook', 3500);
+        product1.seeDescription();
+
+        //literal object
+        let product2 = {
+            description: 'Freezer',
+            price: 1800,
+            seeDescription: function () {
+                console.log(`${this.description} for only ${"$" + this.price}`)
+            }
+        }
+        product2.seeDescription();
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

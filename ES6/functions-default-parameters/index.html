@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions - Default Parameters</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        function tellHistory(character = 'Jim', activity = 'run', ownerName = 'Bob') {
+            document.write(`Once uppon a timea dog called ${character}, he loves to ${activity} and his owner's name is ${ownerName}`)
+        }
+
+        tellHistory();
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

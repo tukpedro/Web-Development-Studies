@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions - Functions Factory</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+
+        /*Padrao Factory é criar atributos e métodos que serão usados
+        * em objetos diferentes que contém as mesmas características  */
+
+        let Bike1 = {
+            color: 'red',
+            gear: 'unique',
+            wheelSize: 20,
+            pedal(){console.log('bike pedal')}
+        }
+
+        let Bike2 = {
+            color: 'blue',
+            gear: '18',
+            wheelSize: 26,
+            pedal(){console.log('bike pedal')}
+        }
+
+        console.log(Bike1);
+        console.log(Bike2);
+
+        let bikeFactory = function(color, gear, wheelSize){
+            return {
+                color,
+                gear,
+                wheelSize,
+                pedal(){console.log('bike pedal')}
+            }
+        }
+
+        let Bike3 = bikeFactory('black', '24', 26);
+        let Bike4 = bikeFactory('white', '18', 20);
+
+        console.log(Bike3);
+        console.log(Bike4);
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

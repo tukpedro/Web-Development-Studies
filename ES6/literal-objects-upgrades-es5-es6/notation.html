@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Literal Objects - Notation</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let name = 'Pedro';
+        let age = 31;
+        let gender = 'male';
+        let profession = 'developer';
+
+        let object = {
+            name: name,
+            age: age,
+            gender: gender,
+            profession: profession,
+            displayResume: function () {
+                console.log(`${this.name}, ${this.age} old, ${this.gender}, is a ${this.profession}`)
+            }
+        }
+
+        console.log(object);
+        object.displayResume();
+
+        let object2 = {
+            name,
+            age,
+            gender,
+            profession,
+            displayResume() {
+                console.log(`${this.name}, ${this.age} old, ${this.gender}, is a ${this.profession}`)
+            }
+        }
+
+        console.log(object2);
+        object2.displayResume();
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

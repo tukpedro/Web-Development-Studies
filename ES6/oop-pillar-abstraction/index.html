@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pillars of Object Oriented Programming - Abstraction </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        //object model
+        class BankAccount {
+            //accountNumber
+            //sortCode
+            //balance
+            //limit
+            constructor() {
+                this.accountNumber = 85510;
+                this.sortCode = 1075;
+                this.balance = 50;
+                this.limit = 450;
+            }
+
+            deposit(depositValue){
+                this.balance += depositValue;
+            }
+
+            withdrawal(withdrawalValue){
+                this.balance -= withdrawalValue;
+            }
+
+            checkBalance(){
+                return this.balance;
+            }
+        }
+
+        let x = new BankAccount();
+
+        let y = new BankAccount();
+
+        console.log(x.checkBalance());
+
+        x.deposit(80);
+
+        console.log(x.checkBalance());
+
+        x.withdrawal(100);
+
+        console.log(x.checkBalance());
+
+        console.log(y.checkBalance());
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

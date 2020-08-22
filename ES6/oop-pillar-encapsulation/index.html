@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pillars of Object Oriented Programming - Encapsulation</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class Tv {
+            constructor() {
+                this._channels = [2, 4, 5, 10];
+                this._activeChannel = 5;
+                this._volume = 10;
+            }
+            get activeChannel() {
+                return this._activeChannel;
+            }
+            set activeChannel (channel) {
+                if (this._channels.indexOf(channel) !== -1){
+                    this._activeChannel = channel;
+                }
+            }
+        }
+
+        let tv = new Tv();
+        tv._activeChannel = 10;
+        console.log(tv.activeChannel)
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

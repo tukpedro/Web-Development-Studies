@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Literal Objects VS JSON notation</title>
+    <script>
+
+        let employees = [{
+            name: 'Fernanda',
+            function: 'Analyst',
+            salary: 4000,
+            status: 'active'
+        }, {
+            name: 'Marcus',
+            function: 'Trainee',
+            salary: 1000,
+            status: 'active'
+        }, {
+            name: 'Rose',
+            function: 'Staf',
+            salary: 2000,
+            status: 'inactive'
+        }, {
+            name: 'Robert',
+            function: 'Developer',
+            salary: 4000,
+            status: 'active'
+        }, {
+            name: 'Mary',
+            function: 'Engineer',
+            salary: 5000,
+            status: 'active'
+        }]
+
+        employees.filter (e => e.status == 'inactive' );
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

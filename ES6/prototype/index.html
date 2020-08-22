@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        /*Prototype é um modelo padrão de objeto em JS.
+        * Toda vez que é criado um novo objeto, este herda
+        * as características de Object(objeto padrão), que podem ser
+        * sobreescritas*/
+
+        //airplane
+        //atributtes: color, model, method: fly
+
+        //literal object
+        let airplane1 = {
+            color: "white",
+            model: "Airbus a380",
+            fly: function () {
+
+                console.log("fly");
+
+            }
+        }
+
+        //constructor function
+        let airplaneF = function(){
+            this.color = "blue",
+            this.model = "Boeing 787",
+            this.fly = function () {console.log("fly")}
+        }
+
+        let airplane2 = new airplaneF();
+
+        //class
+        class airplaneC {
+            constructor() {
+                this.color = "red"
+                this.model = "Embraer E-Jets"
+            }
+
+            fly(){
+                console.log("fly");
+            }
+        }
+
+        let airplane3 = new airplaneC();
+
+        console.log(airplane1);
+        console.log(airplane2);
+        console.log(airplane3);
+
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
